@@ -1,0 +1,51 @@
+{
+    label: "multi - query - filter - 25% - 2",
+    queries: [
+        "SELECT * FROM A(ID <= 12500)",
+        "SELECT * FROM B(ID <= 12500)"
+    ],
+    events: [
+        {
+            name: "A",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 50000]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "B",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 50000]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        }
+    ]
+}

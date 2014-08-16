@@ -1,0 +1,34 @@
+{
+    label: "aggregation - sum - jumping - 500",
+    queries: [
+        "SELECT SUM(A1) FROM A.win:length_batch(500)"
+    ],
+    events: [
+        {
+            name: "A",
+
+            variables: [
+                {
+                    name: "A1",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A2",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A3",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A4",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A5",
+                    range: [1, 1000]
+                }
+            ]
+        }
+    ]
+}

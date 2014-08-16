@@ -1,0 +1,183 @@
+{
+    label: "multi - query - filter - 25% - 8",
+    queries: [
+        "SELECT * FROM A(ID <= 3125)",
+        "SELECT * FROM B(ID <= 3125)",
+        "SELECT * FROM C(ID <= 3125)",
+        "SELECT * FROM D(ID <= 3125)",
+        "SELECT * FROM E(ID <= 3125)",
+        "SELECT * FROM F(ID <= 3125)",
+        "SELECT * FROM G(ID <= 3125)",
+        "SELECT * FROM H(ID <= 3125)"
+    ],
+    events: [
+        {
+            name: "A",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "B",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "C",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "D",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "E",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "F",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "G",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "H",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 12500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        }
+    ]
+}

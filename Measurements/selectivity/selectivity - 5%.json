@@ -1,0 +1,22 @@
+{
+    label: "Selectivity - 5%",
+    queries: [
+        "SELECT ID, A1 FROM A(ID <= 5000)"
+    ],
+    events: [
+        {
+            name: "A",
+
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 100000]
+                },
+                {
+                    name: "A1",
+                    value: "Test"
+                }
+            ]
+        }
+    ]
+}

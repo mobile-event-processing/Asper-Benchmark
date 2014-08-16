@@ -1,0 +1,37 @@
+{
+    label: "join - database - cached - 200%",
+    queries: [
+        "SELECT A1, A2, A3, A4, A5, DB.T1, DB.T2, DB.T3, DB.T4, DB.T5 FROM A unidirectional, sql:evaluation['SELECT T1 as T1, T2 as T2, T3 as T3, T4 as T4, T5 as T5 FROM test WHERE ID = ${A.ID}'] as DB"
+    ],
+    events: [
+        {
+            name: "A",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 2000]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                },
+                {
+                    name: "A4",
+                    value: 100
+                },
+                {
+                    name: "A5",
+                    value: 100
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    label: "join - window - j3 - 500",
+    queries: [
+        "SELECT A.ID, A.A1, A.A2, A.A3, B.B1, B.B2, B.B3 FROM A.win:length(5000), B.win:length(5000) WHERE A.ID = B.ID"
+    ],
+    events: [
+        {
+            name: "A",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 500]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "B",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        }
+    ]
+}

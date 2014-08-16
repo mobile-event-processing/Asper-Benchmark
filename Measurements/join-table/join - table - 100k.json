@@ -1,0 +1,67 @@
+{
+    label: "join - table - 100k",
+    queries: [
+        "SELECT A1, A2, A3, A4, A5, T1, T2, T3, T4, T5 FROM A unidirectional, Table.win:length(100000) WHERE A.ID = Table.SEQUENCE"
+    ],
+    events: [
+        {
+            name: "Table",
+            preload: 100000,
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 100000]
+                },
+                {
+                    name: "T1",
+                    value: 100
+                },
+                {
+                    name: "T2",
+                    value: 100
+                },
+                {
+                    name: "T3",
+                    value: 100
+                },
+                {
+                    name: "T4",
+                    value: 100
+                },
+                {
+                    name: "T5",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "A",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 100000]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                },
+                {
+                    name: "A4",
+                    value: 100
+                },
+                {
+                    name: "A5",
+                    value: 100
+                }
+            ]
+        }
+    ]
+}

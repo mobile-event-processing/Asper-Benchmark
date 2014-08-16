@@ -1,0 +1,141 @@
+{
+    label: "projection - 32 - attributes",
+    queries: [
+        "SELECT A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, A22, A23, A24, A25, A26, A27, A28, A29, A30, A31, A32 FROM A"],
+    events: [
+        {
+            name: "A",
+
+            variables: [
+                {
+                    name: "A1",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A2",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A3",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A4",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A5",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A6",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A7",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A8",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A9",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A10",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A11",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A12",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A13",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A14",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A15",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A16",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A17",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A18",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A19",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A20",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A21",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A22",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A23",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A24",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A25",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A26",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A27",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A28",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A29",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A30",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A31",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A32",
+                    range: [1, 1000]
+                }
+            ]
+        }
+    ]
+}

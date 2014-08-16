@@ -1,0 +1,23 @@
+{
+    label: "Pattern - selectivity 01%",
+    queries: [
+        "SELECT * FROM PATTERN [(every a1=A -> a2=A(ID = a1.ID AND A1 > 99.9) where timer:within(60 second))]"
+    ],
+    events: [
+        {
+            name: "A",
+
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A1",
+                    range: [1.0, 100.1]
+                }
+
+            ]
+        }
+    ]
+}

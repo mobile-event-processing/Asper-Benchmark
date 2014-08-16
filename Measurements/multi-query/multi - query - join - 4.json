@@ -1,0 +1,72 @@
+{
+    label: " multi - query - join - 4 ",
+    queries: [
+        "SELECT * FROM A.win:length(5000), B.win:length(5000) WHERE A.ID = B.ID",
+        "SELECT * FROM B.win:length(5000), C.win:length(5000) WHERE B.ID = C.ID"
+    ],
+    events: [
+        {
+            name: "A",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 2500]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "B",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 2500]
+                },
+                {
+                    name: "B1",
+                    value: 100
+                },
+                {
+                    name: "B2",
+                    value: 100
+                },
+                {
+                    name: "B3",
+                    value: 100
+                }
+            ]
+        },
+        {
+            name: "C",
+            variables: [
+                {
+                    name: "ID",
+                    range: [1, 2500]
+                },
+                {
+                    name: "A1",
+                    value: 100
+                },
+                {
+                    name: "A2",
+                    value: 100
+                },
+                {
+                    name: "A3",
+                    value: 100
+                }
+            ]
+        }
+    ]
+}

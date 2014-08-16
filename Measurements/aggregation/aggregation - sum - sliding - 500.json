@@ -1,0 +1,34 @@
+{
+    label: "aggregation - sum - sliding - 500",
+    queries: [
+        "SELECT SUM(A1) FROM A.win:length(500)"
+    ],
+    events: [
+        {
+            name: "A",
+
+            variables: [
+                {
+                    name: "A1",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A2",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A3",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A4",
+                    range: [1, 1000]
+                },
+                {
+                    name: "A5",
+                    range: [1, 1000]
+                }
+            ]
+        }
+    ]
+}
