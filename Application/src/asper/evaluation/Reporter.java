@@ -73,10 +73,6 @@ public class Reporter extends Activity
 
             final int samples = Settings.RUNTIME / Settings.MONITORGRANUALITY;
 
-            string.append(
-                    "\nWorker: " + key + "\n"
-            );
-
             // Calculates the local, total average throughput
 
             List<Number> combined = new ArrayList();
@@ -92,15 +88,15 @@ public class Reporter extends Activity
             Measurement combinedMeasures = Statistics.calculate(combined);
 
             string.append(
-                    String.format("\nAverage throughput: %.0f", combinedMeasures.getMean())
+                    "Worker: " + worker.getName() + "\n"
             );
 
             string.append(
-                    String.format("\nStd.dev : %.0f", combinedMeasures.getStdev())
+                    String.format("Average throughput: %.2f\n", combinedMeasures.getMean())
             );
 
             string.append(
-                    "\n"
+                    String.format("Std.dev : %.2f\n\n", combinedMeasures.getStdev())
             );
 
             ArrayList<Measurement> summarized = new ArrayList<Measurement>();
@@ -123,7 +119,14 @@ public class Reporter extends Activity
             for (Measurement m : summarized)
             {
                 serie.add(m.getMean());
-                string.append(m.getMean() + " (+-" + m.getStdev() + ")\n");
+
+                string.append(
+                        String.format("%.2f", m.getMean())
+                );
+
+                string.append(
+                        String.format(" (+- %.2f)\n", m.getStdev())
+                );
             }
 
             graph.addSeries(
@@ -152,13 +155,11 @@ public class Reporter extends Activity
                         + "On : " + Settings.WORKERS + " workers\n"
                         + "Warmup : " + Settings.WARMUP / 1000 + " s.\n"
                         + "Runtime : " + Settings.RUNTIME / 1000 + " s.\n"
-                        + "Runtime : " + Settings.RUNTIME / 1000 + " s.\n"
                         + "#\n"
         );
 
         content.setText(string.toString());
         graphPlaceholder.addView(graph.getView());
-        save();
 
         Vibrator v = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
         v.vibrate(2500);

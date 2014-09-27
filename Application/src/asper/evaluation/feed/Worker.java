@@ -88,10 +88,6 @@ public class Worker extends Thread
                     this.getName() + " initiating work procedure"
             );
 
-            Log.i(Settings.TAG, "Rests before work");
-            //sleep(5000);
-            Log.i(Settings.TAG, "Begins working");
-
             // Initates the monitor timer
             monitor.reset();
             monitor.initiate();
